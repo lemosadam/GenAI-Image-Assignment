@@ -21,14 +21,16 @@ You chose $choice1
 
 You chose $choice1
 
-[[Generate]]</tw-passagedata><tw-passagedata pid="4" name="Generate" tags="" position="800,625" size="100,100">(link: &quot;Reveal your destination&quot;)[(open-url: &quot;http://mjn.anadrome.org:5000/&quot; + $choice1 + &quot;castle.png&quot;)]
+[[Generate]]</tw-passagedata><tw-passagedata pid="4" name="Generate" tags="" position="800,625" size="100,100">(link: &quot;Reveal your destination&quot;)[(open-url: &quot;http://mjn.anadrome.org:5000/&quot; + $choice1 + &quot; medieval castle.png&quot;)]
 
-
+[[Enter]]
 
 (set: $imageUrl to &quot;http://mjn.anadrome.org:5000/&quot; + $choice1 + &quot;medieval castle.png&quot;)
 
 &lt;img src=&quot;$imageUrl&quot; alt=&quot;Dynamic Image&quot;&gt;
-http://mjn.anadrome.org:5000/ $choice1`_rabbit_on_a_skateboard`.png</tw-passagedata></tw-storydata>
+http://mjn.anadrome.org:5000/ $choice1`_rabbit_on_a_skateboard`.png</tw-passagedata><tw-passagedata pid="5" name="Enter" tags="" position="800,750" size="100,100">You are inside the castle.
+
+[[Proceed]]</tw-passagedata><tw-passagedata pid="6" name="Proceed" tags="" position="800,875" size="100,100">You proceeded.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
