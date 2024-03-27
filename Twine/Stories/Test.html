@@ -9,28 +9,105 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Test.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="F0A595D2-8FA6-4864-A65D-6B82E736C68C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="850,375" size="100,100">Choose
+<tw-storydata name="Test" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="F0A595D2-8FA6-4864-A65D-6B82E736C68C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="850,375" size="100,100">This is the start of your journey.
+
+Things are coming into focus.
+
+You see the world in...
 
 [[Color]]
 
-[[Black and White]]</tw-passagedata><tw-passagedata pid="2" name="Color" tags="" position="787.5,500" size="100,100">(set: $choice1 = &quot;color&quot;)
+[[Black and White]]</tw-passagedata><tw-passagedata pid="2" name="Color" tags="" position="787.5,500" size="100,100">(set: $choice1 = &quot; color &quot;)
 
-You chose $choice1
+You chose $choice1. The world around you has as many hues as humans have emotions.
 
-[[Generate]]</tw-passagedata><tw-passagedata pid="3" name="Black and White" tags="" position="912.5,500" size="100,100">(set: $choice1 = &quot;black and white&quot;)
+[[How do you perceive your surroundings?]]</tw-passagedata><tw-passagedata pid="3" name="Black and White" tags="" position="912.5,500" size="100,100">(set: $choice1 = &quot; black and white &quot;)
 
-You chose $choice1
+You chose $choice1. Things are stark and clear to you. 
 
-[[Generate]]</tw-passagedata><tw-passagedata pid="4" name="Generate" tags="" position="800,625" size="100,100">(link: &quot;Reveal your destination&quot;)[(open-url: &quot;http://mjn.anadrome.org:5000/&quot; + $choice1 + &quot; medieval castle.png&quot;)]
+[[How do you perceive your surroundings?]]</tw-passagedata><tw-passagedata pid="4" name="Generate" tags="" position="850,825" size="100,100">(link: &quot;View your chosen perception&quot;)[(open-url: &quot;http://mjn.anadrome.org:5000/&quot; + $choice1 + $choice2 + &quot;.png&quot;)]
 
-[[Enter]]
 
-(set: $imageUrl to &quot;http://mjn.anadrome.org:5000/&quot; + $choice1 + &quot;medieval castle.png&quot;)
+[[Continue]]
 
-&lt;img src=&quot;$imageUrl&quot; alt=&quot;Dynamic Image&quot;&gt;
-http://mjn.anadrome.org:5000/ $choice1`_rabbit_on_a_skateboard`.png</tw-passagedata><tw-passagedata pid="5" name="Enter" tags="" position="800,750" size="100,100">You are inside the castle.
 
-[[Proceed]]</tw-passagedata><tw-passagedata pid="6" name="Proceed" tags="" position="800,875" size="100,100">You proceeded.</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="5" name="How do you perceive your surroundings?" tags="" position="825,650" size="100,100">How do you perceive your surroundings?
+
+[[Abstract]]
+
+[[Realistic]]</tw-passagedata><tw-passagedata pid="6" name="Abstract" tags="" position="700,750" size="100,100">(set: $choice2 = &quot; abstract &quot;)
+
+Nothing is ever quite as it appears to be.
+
+[[Generate]] </tw-passagedata><tw-passagedata pid="7" name="Realistic" tags="" position="1025,775" size="100,100">(set: $choice2 = &quot; realistic &quot;)
+
+You take things as they are.
+
+[[Generate]]</tw-passagedata><tw-passagedata pid="8" name="Continue" tags="" position="975,950" size="100,100">Where are you?
+
+[[A castle]]
+
+[[A forest]]</tw-passagedata><tw-passagedata pid="9" name="A castle" tags="" position="912.5,1075" size="100,100">(set: $choice3 = &quot; a castle &quot;)
+
+A large structure is before you.
+
+[[When are you?]]</tw-passagedata><tw-passagedata pid="10" name="A forest" tags="" position="1037.5,1075" size="100,100">(set: $choice3 = &quot; a forest &quot;)
+
+You are in a dense forest.
+
+[[When are you?]] </tw-passagedata><tw-passagedata pid="11" name="When are you?" tags="" position="975,1200" size="100,100">We know where you are.
+
+&#39;&#39;When&#39;&#39; are you?
+
+[[The future]]
+
+[[The past]]</tw-passagedata><tw-passagedata pid="12" name="The future" tags="" position="912.5,1325" size="100,100">(set: $choice4 = &quot; sci fi &quot;)
+
+The future.
+
+[[Generate 2]] </tw-passagedata><tw-passagedata pid="13" name="The past" tags="" position="1037.5,1325" size="100,100">(set: $choice4 = &quot; medieval &quot;)
+
+The past.
+
+[[Generate 2]]</tw-passagedata><tw-passagedata pid="14" name="Generate 2" tags="" position="1037.5,1450" size="100,100">(link: &quot;What do you see?&quot;)[(open-url: &quot;http://mjn.anadrome.org:5000/&quot; + $choice1 + $choice2 + $choice3 + $choice4 + &quot;.png&quot;)]
+
+[[Continue onward]]</tw-passagedata><tw-passagedata pid="15" name="Continue onward" tags="" position="1037.5,1575" size="100,100">A figure approaches you. Are they...
+
+[[An adult]]?
+
+[[A child]]?</tw-passagedata><tw-passagedata pid="16" name="An adult" tags="" position="900,1675" size="100,100">(set: $choice5 = &quot; an adult &quot;)
+
+An adult figure approaches.
+
+[[They appear...]]</tw-passagedata><tw-passagedata pid="17" name="A child" tags="" position="1200,1675" size="100,100">(set: $choice5 = &quot; a child &quot;)
+
+A youthful figure approaches you.
+
+[[They appear...]] </tw-passagedata><tw-passagedata pid="18" name="They appear..." tags="" position="1025,1825" size="100,100">Do they appear masculine or feminine?
+
+[[Masculine]]
+
+[[Feminine]]</tw-passagedata><tw-passagedata pid="19" name="Masculine" tags="" position="962.5,1950" size="100,100">(set: $choice6 = &quot; masculine &quot;)
+
+It is a masculine figure.
+
+[[Their demeanor...]]</tw-passagedata><tw-passagedata pid="20" name="Feminine" tags="" position="1087.5,1950" size="100,100">(set: $choice6 = &quot; feminine &quot;)
+
+It is a feminine figure.
+
+[[Their demeanor...]]</tw-passagedata><tw-passagedata pid="21" name="Their demeanor..." tags="" position="1000,2100" size="100,100">Is it welcoming or wary?
+
+[[Welcoming]]
+
+[[Wary]]</tw-passagedata><tw-passagedata pid="22" name="Welcoming" tags="" position="925,2250" size="100,100">(set: $choice7 = &quot; welcoming &quot;)
+
+They appear inviting.
+
+[[Generate 3]] </tw-passagedata><tw-passagedata pid="23" name="Wary" tags="" position="1062.5,2225" size="100,100">(set: $choice7 = &quot; wary &quot;)
+
+They appear distrustful.
+
+[[Generate 3]]</tw-passagedata><tw-passagedata pid="24" name="Generate 3" tags="" position="1000,2375" size="100,100">(link: &quot;Regard the figure...&quot;)[(open-url: &quot;http://mjn.anadrome.org:5000/&quot; + $choice1 + $choice2 + $choice3 + $choice4 + $choice5 + $choice6 + $choice7 + &quot;.png&quot;)]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
